@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#f6ecdc"/>
+  <g transform="translate(400 320)">
+    <circle r="168" fill="#f0c14e"/>
+    <circle r="210" fill="none" stroke="#e2ae3c" stroke-width="3"/>
+    <g stroke="#c4622d" stroke-width="8" stroke-linecap="round">
+      <path d="M0-248v46M0 202v46M-248 0h46M202 0h46"/>
+      <path d="M-176-176l32 32M144 144l32 32M176-176l-32 32M-144 144l-32 32"/>
+    </g>
+    <circle r="70" fill="#fff4d4"/>
+    <circle cx="-24" cy="-8" r="8" fill="#6e2433"/>
+    <circle cx="24" cy="-8" r="8" fill="#6e2433"/>
+    <path d="M-22 24 Q0 40 22 24" stroke="#6e2433" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="48" y="72" fill="#6e2433" font-family="Georgia, serif" font-size="40">Surya</text>
+</svg>

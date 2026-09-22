@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8c98a"/>
+      <stop offset="0.45" stop-color="#fbe6c8"/>
+      <stop offset="1" stop-color="#f4e7d2"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#edd3a4"/>
+      <stop offset="1" stop-color="#c49262"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="700" rx="32" fill="url(#sky)"/>
+  <circle cx="690" cy="148" r="74" fill="#f0c14e"/>
+  <circle cx="690" cy="148" r="98" stroke="#e2ae3c" stroke-width="2" opacity="0.8"/>
+  <g stroke="#e2ae3c" stroke-width="3" stroke-linecap="round" opacity="0.85">
+    <path d="M690 42v28M690 226v28M586 148h28M766 148h28M612 70l20 20M768 226l-20-20M612 226l20-20M748 70l20 20"/>
+  </g>
+  <ellipse cx="450" cy="620" rx="360" ry="28" fill="#e7cfa6"/>
+  <path d="M250 500 L330 186 Q348 150 366 186 L446 500 Z" fill="#7a342c"/>
+  <circle cx="348" cy="168" r="16" fill="#f0c14e"/>
+  <rect x="168" y="500" width="560" height="86" rx="6" fill="url(#stone)" stroke="#6e2433" stroke-width="3"/>
+  <g fill="#a24b32">
+    <rect x="470" y="430" width="230" height="70"/>
+    <rect x="498" y="378" width="174" height="52"/>
+    <rect x="526" y="334" width="118" height="44"/>
+    <rect x="552" y="298" width="66" height="36"/>
+  </g>
+  <rect x="572" y="274" width="26" height="24" fill="#6e2433"/>
+  <circle cx="585" cy="268" r="10" fill="#f0c14e"/>
+  <g fill="none" stroke="#4a1522" stroke-width="3">
+    <g transform="translate(214 543)">
+      <circle r="30"/><circle r="7" fill="#4a1522" stroke="none"/>
+      <path d="M0-26v52M-26 0h52M-18-18l36 36M18-18L-18 18" stroke-width="2"/>
+    </g>
+    <g transform="translate(292 543)">
+      <circle r="30"/><circle r="7" fill="#4a1522" stroke="none"/>
+      <path d="M0-26v52M-26 0h52M-18-18l36 36M18-18L-18 18" stroke-width="2"/>
+    </g>
+    <g transform="translate(370 543)">
+      <circle r="30"/><circle r="7" fill="#4a1522" stroke="none"/>
+      <path d="M0-26v52M-26 0h52M-18-18l36 36M18-18L-18 18" stroke-width="2"/>
+    </g>
+    <g transform="translate(520 543)">
+      <circle r="30"/><circle r="7" fill="#4a1522" stroke="none"/>
+      <path d="M0-26v52M-26 0h52M-18-18l36 36M18-18L-18 18" stroke-width="2"/>
+    </g>
+    <g transform="translate(598 543)">
+      <circle r="30"/><circle r="7" fill="#4a1522" stroke="none"/>
+      <path d="M0-26v52M-26 0h52M-18-18l36 36M18-18L-18 18" stroke-width="2"/>
+    </g>
+    <g transform="translate(676 543)">
+      <circle r="30"/><circle r="7" fill="#4a1522" stroke="none"/>
+      <path d="M0-26v52M-26 0h52M-18-18l36 36M18-18L-18 18" stroke-width="2"/>
+    </g>
+  </g>
+  <g fill="#5c3a32">
+    <path d="M742 548 l8-26 10 4 6-16 12 8 2 18 14 6v16h-16l-4 10h-14l-6-14z"/>
+    <path d="M778 552 l8-26 10 4 6-16 12 8 2 18 14 6v16h-16l-4 10h-14l-6-14z"/>
+    <path d="M814 556 l8-26 10 4 6-16 12 8 2 18 14 6v16h-16l-4 10h-14l-6-14z"/>
+  </g>
+  <text x="48" y="78" fill="#6e2433" font-family="Georgia, serif" font-size="28">East, toward sunrise</text>
+</svg>

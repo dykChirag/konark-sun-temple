@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Konark Sun Temple — Digital Prototype | IKS Lab</title>
+  <meta name="description" content="An educational walkthrough of the Konark Sun Temple: its chariot architecture, wheel sundial, and links between Indian knowledge systems and modern science.">
+  <meta name="theme-color" content="#4a1522">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="#hero">Konark <span>Sun Temple</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav-links" aria-label="Sections">
+        <a href="#overview">Overview</a>
+        <a href="#model">3D Model</a>
+        <a href="#sundial">Sundial</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#iks">IKS</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Indian Knowledge Systems · Experiment 8</p>
+          <h1>Konark Sun Temple</h1>
+          <p class="tagline">The Black Pagoda</p>
+          <p class="lede">A thirteenth-century stone chariot of the sun god Surya, on the Odisha coast. This prototype walks through its architecture, the astronomy built into the wheels, and the link between temple knowledge and ideas we still use in engineering.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#model">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.7"/>
+                <circle cx="12" cy="12" r="1.7" fill="currentColor"/>
+                <path d="M12 4.5v15M4.5 12h15M6.7 6.7l10.6 10.6M17.3 6.7 6.7 17.3" stroke="currentColor" stroke-width="1.3"/>
+              </svg>
+              Explore in 3D
+            </a>
+            <a class="btn btn-ghost" href="#sundial">See the sundial</a>
+          </div>
+          <ul class="fact-row">
+            <li>c. 1250 CE</li>
+            <li>Narasimhadeva I</li>
+            <li>UNESCO 1984</li>
+            <li>24 wheels</li>
+            <li>7 horses</li>
+          </ul>
+        </div>
+        <figure>
+          <img class="hero-art" src="assets/hero-sunrise.svg" alt="Schematic of the Konark Sun Temple at sunrise: a tall tower, a stepped hall, carved wheels along the base, and horses facing the sun">
+          <figcaption class="art-caption">Schematic for the prototype. The real stone is weathered khondalite, dark enough that sailors used the tower as a sea-mark.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">01 — Context</p>
+          <h2>History and overview</h2>
+          <p class="section-lead">The temple at Konark, near Puri, was built as the chariot of Surya. European mariners called it the Black Pagoda, to tell it apart from the whitewashed Jagannath temple at Puri.</p>
+        </header>
+        <div class="overview-grid">
+          <div class="prose reveal">
+            <p>It was raised in the thirteenth century under Narasimhadeva I of the Eastern Ganga dynasty, who ruled from 1238 to 1264, and dedicated to Surya. Temple tradition names the master builder as Bisu Maharana. The plan follows the Kalinga order: a sanctum under a tall curved tower (the rekha deul), an audience hall with a stepped roof (the jagamohana), and a dance hall, the natamandira, further east.</p>
+            <p>The building faces east so that the first light meets the sun god. Along the plinth are 24 carved wheels, each about three metres across, in twelve pairs. Seven horses stand at the eastern end. In 1984 UNESCO inscribed the Sun Temple as a World Heritage Site.</p>
+            <p>The great tower over the sanctum was already gone by the nineteenth century. What still holds the skyline is the jagamohana. In 1903–1905 that hall was filled with sand so its corbelled roof would not fall. The model in the next section rebuilds the missing tower only so the original idea can be discussed. It is not a measured replica.</p>
+          </div>
+          <ol class="timeline reveal">
+            <li><strong>c. 1250 CE</strong> Built under Narasimhadeva I and dedicated to Surya.</li>
+            <li><strong>A sea-mark</strong> Mariners knew the dark tower as the Black Pagoda.</li>
+            <li><strong>19th century</strong> The sanctum tower, the shikhara, had fallen.</li>
+            <li><strong>1903–1905</strong> The audience hall was packed with sand to keep it standing.</li>
+            <li><strong>1984</strong> Inscribed as a UNESCO World Heritage Site.</li>
+            <li><strong>This prototype</strong> A teaching model of the chariot, for Experiment 8.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="model">
+      <div class="wrap wrap-wide">
+        <header class="section-head reveal">
+          <p class="eyebrow">02 — Model</p>
+          <h2>Walk around the chariot</h2>
+          <p class="section-lead">Built in the browser from boxes, cylinders, and rings — no downloaded 3D file. Drag to rotate, scroll to zoom, and click a part. The buttons work if a pointer is awkward, and so do the arrow keys once the view is focused.</p>
+        </header>
+        <div class="viewer-layout reveal">
+          <div class="viewer-column">
+            <div class="viewer-stage">
+              <p class="east-badge">Horses face east, toward sunrise</p>
+              <div id="viewer" tabindex="0" aria-label="3D model of the Konark Sun Temple. Click the model, then use arrow keys to rotate, plus and minus to zoom, and R to reset."></div>
+              <p id="viewer-status" class="viewer-status" role="status">Building the stone chariot…</p>
+            </div>
+            <div class="viewer-controls" role="group" aria-label="Rotate and zoom the model">
+              <button type="button" id="cam-left">Rotate left</button>
+              <button type="button" id="cam-right">Rotate right</button>
+              <button type="button" id="cam-up">Tilt up</button>
+              <button type="button" id="cam-down">Tilt down</button>
+              <button type="button" id="cam-in">Zoom in</button>
+              <button type="button" id="cam-out">Zoom out</button>
+              <button type="button" id="cam-reset">Reset view</button>
+            </div>
+            <p class="hint">Drag to rotate · scroll to zoom · click a gold marker or any wheel, horse, the hall, or the tower. After clicking the view: arrow keys rotate, + and − zoom, R resets.</p>
+          </div>
+          <aside class="info-panel" id="info-panel" aria-live="polite">
+            <div class="hotspot-picks" role="group" aria-label="Parts of the temple">
+              <button type="button" data-hotspot="intro" aria-pressed="true">Overview</button>
+              <button type="button" data-hotspot="wheel" aria-pressed="false">Wheel</button>
+              <button type="button" data-hotspot="horse" aria-pressed="false">Horses</button>
+              <button type="button" data-hotspot="hall" aria-pressed="false">Hall</button>
+              <button type="button" data-hotspot="tower" aria-pressed="false">Shikhara</button>
+            </div>
+            <p class="eyebrow" id="info-kicker">How to look</p>
+            <h3 id="info-title">A chariot of stone</h3>
+            <p id="info-body">Drag to turn the model, or use the buttons under it. Scroll to move closer. Gold markers sit on a wheel, the horses, the hall, and the tower — any of those parts can be clicked. On the real temple the horses face east, toward sunrise. The dance hall further east is left out so the chariot stays easy to read. This is a schematic for the lab, not a measured survey.</p>
+          </aside>
+        </div>
+        <noscript><p>The 3D model needs JavaScript. The written sections below still explain the temple.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section" id="sundial">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">03 — Timekeeping</p>
+          <h2>The 24 wheels</h2>
+          <p class="section-lead">Each wheel has eight major spokes. A day was divided into eight praharas, and 45° between spokes is exactly three hours if a shadow moves 15° an hour — the rate that follows from a 360° turn in 24 hours. The same rate gives a quarter of a degree per minute, which is the geometry behind the claim that a wheel can be read to the minute.</p>
+        </header>
+        <div class="sundial-layout">
+          <div class="reveal">
+            <p>This demo treats one wheel as a vertical sundial. The sun travels the upper arc from sunrise at the left to sunset at the right. The shadow is drawn opposite the sun, across the lower half. Noon is the downward spoke. At 9:00 am the shadow is 45° off that spoke: one major spoke away, one prahara, three hours.</p>
+            <ul class="formula-row">
+              <li><strong>360° ÷ 24</strong> 15° each hour</li>
+              <li><strong>15° ÷ 60</strong> 0.25° each minute</li>
+              <li><strong>45° ÷ 15°</strong> 3 hours, one prahara</li>
+            </ul>
+            <p id="sundial-desc" class="sr-only">A wheel with eight spokes. The shadow leaves the noon spoke by 15 degrees each hour. Preset buttons jump to 9 am, noon, and 3 pm.</p>
+          </div>
+          <div class="sundial-demo reveal">
+            <div class="sundial-canvas-wrap">
+              <canvas id="sundial-canvas" width="640" height="460" aria-describedby="sundial-desc">A drawing of the wheel sundial appears here when JavaScript runs.</canvas>
+            </div>
+            <div class="readout" aria-live="polite">
+              <p>Solar time <strong id="sd-time">12:00 pm</strong></p>
+              <p>From the noon spoke <strong id="sd-angle">0.0°</strong> <span id="sd-side">on the noon spoke</span></p>
+              <p>Reading <strong id="sd-spoke">On the 12:00 noon spoke</strong></p>
+            </div>
+            <label class="sd-slider">Time of day, 6:00 am to 6:00 pm
+              <input id="sd-slider" type="range" min="0" max="720" value="360" step="1" aria-valuemin="0" aria-valuemax="720">
+            </label>
+            <div class="presets" role="group" aria-label="Example times">
+              <button type="button" data-time="180">9:00 am</button>
+              <button type="button" data-time="360">Noon</button>
+              <button type="button" data-time="540">3:00 pm</button>
+              <button type="button" id="sd-play" aria-pressed="false">Play the day</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">04 — Making</p>
+          <h2>Architecture and engineering</h2>
+          <p class="section-lead">The temple is a Kalinga building planned as Surya’s chariot and faced east. The sanctum tower, the stepped audience hall, and the separate dance hall are the three main volumes. Under that symbolism is a real structure: laterite, khondalite, and iron.</p>
+        </header>
+        <div class="card-grid">
+          <article class="info-card reveal">
+            <span class="num">7 · 24 · 12</span>
+            <h3>Chariot as a calendar</h3>
+            <p>Seven horses are the seven days. Twenty-four wheels are the twenty-four hours, and in another reading the twenty-four fortnights. Twelve pairs are the twelve months. The numbers are the plan, not an ornament added afterwards.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="badge">Structure</span>
+            <h3>Laterite, khondalite, iron</h3>
+            <p>The platform is laterite. The carved body is mainly khondalite, a garnet-bearing rock that weathers dark — one reason the tower read as black from the sea. Wrought-iron beams, clamps, and dowels locked blocks together. Their rusting is part of why the fabric has been damaged.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="badge">Craft</span>
+            <h3>Courses cut to carry load</h3>
+            <p>Between the wheels the plinth is covered with figures cut almost to the edge of the block. The beds of those courses had to fit: a bad joint would not carry the next stone of a tower this size. The precision is structural as well as visual. The hall’s pidha roof stacks each course shorter than the one below, so the span and the weight both step inward.</p>
+          </article>
+          <article class="info-card legend reveal">
+            <span class="badge legend">Legend</span>
+            <h3>The lodestone</h3>
+            <p>A popular story says the tower was crowned with a magnet so strong it pulled compasses off course, and that the tower was brought down because of it. No such stone survives to be tested. What is solid is that the tower was tall enough to be a navigational mark — the Black Pagoda.</p>
+          </article>
+        </div>
+        <ul class="months" aria-label="Twelve months, one for each pair of wheels">
+          <li>Chaitra</li>
+          <li>Vaishakha</li>
+          <li>Jyeshtha</li>
+          <li>Ashadha</li>
+          <li>Shravana</li>
+          <li>Bhadrapada</li>
+          <li>Ashvina</li>
+          <li>Kartika</li>
+          <li>Margashirsha</li>
+          <li>Pausha</li>
+          <li>Magha</li>
+          <li>Phalguna</li>
+        </ul>
+        <p class="months-note">Twelve names, twelve pairs. The list follows the months of the Indian calendar; the temple’s own code simply says “twelve months.”</p>
+      </div>
+    </section>
+
+    <section class="section" id="iks">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">05 — Knowledge</p>
+          <h2>Where IKS meets the lab</h2>
+          <p class="section-lead">The temple is a place where astronomy, building rules, sculpture, and arithmetic were made public. Each of those has a direct partner in a modern course.</p>
+        </header>
+        <div class="bridge-list">
+          <article class="bridge reveal">
+            <div>
+              <span class="kicker">Jyotisha</span>
+              <h3>Tracking the sun</h3>
+              <p>Ritual time was read from the sun’s movement, and the day was split into praharas. The wheel is that idea cut in stone.</p>
+            </div>
+            <span class="bridge-link" aria-hidden="true">→</span>
+            <div>
+              <span class="kicker">Solar geometry</span>
+              <h3>15° an hour</h3>
+              <p>Earth rotates 360° in a mean solar day. Divide by 24 and the shadow’s rate is fixed. The canvas above uses that rate and no other.</p>
+            </div>
+          </article>
+          <article class="bridge reveal">
+            <div>
+              <span class="kicker">Shilpa shastra</span>
+              <h3>Rules for a temple</h3>
+              <p>Canonical practice set the east-facing sanctum, the sequence of halls, and the piled pidha roof.</p>
+            </div>
+            <span class="bridge-link" aria-hidden="true">→</span>
+            <div>
+              <span class="kicker">Structures</span>
+              <h3>Load path</h3>
+              <p>A stepped pyramid shortens every span and keeps mass low in the building. That is why the hall is still standing and the slender tower is not.</p>
+            </div>
+          </article>
+          <article class="bridge reveal">
+            <div>
+              <span class="kicker">The wheel</span>
+              <h3>Counting on a circle</h3>
+              <p>Eight spokes, twelve pairs, twenty-four wheels: time laid out as angles, the way a prahara is a sector of the day.</p>
+            </div>
+            <span class="bridge-link" aria-hidden="true">→</span>
+            <div>
+              <span class="kicker">Gnomonics</span>
+              <h3>A protractor</h3>
+              <p>A clock is an angle divided by 15. Once the spoke spacing is known, the reading is arithmetic, not a separate instrument.</p>
+            </div>
+          </article>
+          <article class="bridge reveal">
+            <div>
+              <span class="kicker">Sculpture</span>
+              <h3>Knowledge you can walk</h3>
+              <p>Surya’s chariot, the horses, and the wheels put a cosmology where anyone on the plinth could see it.</p>
+            </div>
+            <span class="bridge-link" aria-hidden="true">→</span>
+            <div>
+              <span class="kicker">A public record</span>
+              <h3>The building is the manual</h3>
+              <p>Orientation, number, and image carry the content. The monument does not depend on a caption placed somewhere else.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">06 — Plates</p>
+          <h2>Gallery</h2>
+          <p class="section-lead gallery-note">Photographs and a labelled drawing of the monument. The 3D view above is still a schematic; these plates are the real stone.</p>
+        </header>
+        <div class="gallery-grid">
+          <figure class="reveal">
+            <img src="assets/real%20image/from-the-east.png" width="800" height="600" alt="The Konark Sun Temple from the grounds: the stepped jagamohana above a plinth carved with large stone wheels, under a blue sky">
+            <figcaption><strong>From the east</strong> The surviving hall and the wheels along the plinth. Scaffolding on the right is part of conservation work.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/real%20image/the-wheel.png" width="800" height="600" alt="Close view of a carved Konark chariot wheel with eight major spokes, circular medallions, and a richly cut rim">
+            <figcaption><strong>One wheel</strong> Eight major spokes, medallions between them, and a rim dense with carving. About three metres across.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/real%20image/the-team.png" width="800" height="600" alt="Stone horses in a line at the front of the Konark temple, carved as if galloping and pulling the chariot">
+            <figcaption><strong>The team</strong> Seven horses at the eastern front, read as the seven days of the week.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/real%20image/jagamohana.png" width="800" height="600" alt="The Konark audience hall with its stepped pyramidal stone roof, beside a taller carved shrine">
+            <figcaption><strong>Jagamohana</strong> The pidha roof — stacked horizontal courses — is the mass that still stands.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="assets/real%20image/surya.png" width="800" height="600" alt="The sun shining through a carved stone doorway at Konark, with sculpture above the lintel">
+            <figcaption><strong>Surya</strong> Morning light through a doorway. The temple faces east so the first rays meet the sun god.</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img class="is-diagram" src="assets/real%20image/plan.png" width="800" height="600" alt="Labelled drawing of the Konark Sun Temple: sanctuary, jagamohana, and bhoga mandir, with notes on Kalinga architecture, laterite, khondalite, and the UNESCO inscription of 1984">
+            <figcaption><strong>Plan</strong> Sanctuary, jagamohana, and bhoga mandir, with the materials and the east-facing layout marked.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">07 — Check</p>
+          <h2>Five questions</h2>
+          <p class="section-lead">Every answer is on this page. The score is instant, and a wrong choice still shows the reason.</p>
+        </header>
+        <div class="quiz-card reveal">
+          <div id="quiz-play">
+            <p class="eyebrow" id="quiz-progress">Question 1 of 5</p>
+            <h3 id="quiz-question"></h3>
+            <div id="quiz-options" role="group" aria-labelledby="quiz-question"></div>
+            <p id="quiz-feedback" aria-live="polite"></p>
+            <button type="button" id="quiz-next" class="btn" hidden>Next question</button>
+          </div>
+          <div id="quiz-score" hidden>
+            <p class="eyebrow">Score</p>
+            <p class="score-num" id="score-num"></p>
+            <p id="score-msg"></p>
+            <button type="button" id="quiz-retry" class="btn">Try again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="eyebrow">IKS Lab</p>
+      <p class="footer-title">Digital Prototype prepared for Experiment 8, IKS Lab</p>
+      <ul class="team">
+        <li>Ansh Jadhav · Roll No. 72</li>
+        <li>Chirag Patil · Roll No. 74</li>
+        <li>Tanmay Patil · Roll No. 75</li>
+        <li>Kenil Vanjara · Roll No. 79</li>
+      </ul>
+      <p>Vidyavardhini College of Engineering and Technology · Computer Engineering</p>
+      <p class="sources">Teaching prototype for classroom use. Dates follow the UNESCO World Heritage listing for the Sun Temple, Konarak (inscribed 1984), and standard accounts of the Eastern Ganga monument. The lodestone is presented as legend. The 3D model is a schematic, not a survey. Three.js is loaded from a public CDN; the rest of the page is in this folder.</p>
+      <p><a href="#hero">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

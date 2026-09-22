@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#f6ecdc"/>
+  <text x="48" y="64" fill="#6e2433" font-family="Georgia, serif" font-size="32">Chariot plan</text>
+  <text x="560" y="250" fill="#8a4b32" font-family="Georgia, serif" font-size="22">East</text>
+  <rect x="120" y="180" width="520" height="220" rx="8" fill="#edd9b4" stroke="#6e2433" stroke-width="4"/>
+  <rect x="250" y="230" width="90" height="120" fill="#7a342c"/>
+  <rect x="360" y="245" width="140" height="90" fill="#a24b32"/>
+  <g fill="none" stroke="#4a1522" stroke-width="3">
+    <circle cx="180" cy="180" r="22"/><circle cx="250" cy="180" r="22"/>
+    <circle cx="320" cy="180" r="22"/><circle cx="390" cy="180" r="22"/>
+    <circle cx="460" cy="180" r="22"/><circle cx="530" cy="180" r="22"/>
+    <circle cx="180" cy="400" r="22"/><circle cx="250" cy="400" r="22"/>
+    <circle cx="320" cy="400" r="22"/><circle cx="390" cy="400" r="22"/>
+    <circle cx="460" cy="400" r="22"/><circle cx="530" cy="400" r="22"/>
+  </g>
+  <g fill="#6e3b2c">
+    <ellipse cx="670" cy="250" rx="16" ry="10"/>
+    <ellipse cx="690" cy="272" rx="16" ry="10"/>
+    <ellipse cx="700" cy="296" rx="16" ry="10"/>
+    <ellipse cx="690" cy="320" rx="16" ry="10"/>
+    <ellipse cx="670" cy="342" rx="16" ry="10"/>
+    <ellipse cx="648" cy="320" rx="14" ry="9"/>
+    <ellipse cx="648" cy="272" rx="14" ry="9"/>
+  </g>
+  <path d="M640 290 H700" stroke="#8a4b32" stroke-width="3" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#8a4b32"/>
+    </marker>
+  </defs>
+</svg>

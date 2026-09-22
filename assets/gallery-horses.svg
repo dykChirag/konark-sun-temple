@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#f6ecdc"/>
+  <circle cx="660" cy="110" r="46" fill="#f0c14e"/>
+  <path d="M40 430 H760" stroke="#c4a574" stroke-width="6"/>
+  <g fill="#6e3b2c">
+    <path d="M70 400 l18-70 22 10 10-36 28 16 4 40 30 8 v48 h-28 l-6 24 h-26 l-8-28 z"/>
+    <path d="M170 392 l18-70 22 10 10-36 28 16 4 40 30 8 v48 h-28 l-6 24 h-26 l-8-28 z"/>
+    <path d="M270 384 l18-70 22 10 10-36 28 16 4 40 30 8 v48 h-28 l-6 24 h-26 l-8-28 z"/>
+    <path d="M370 384 l18-70 22 10 10-36 28 16 4 40 30 8 v48 h-28 l-6 24 h-26 l-8-28 z"/>
+    <path d="M470 392 l18-70 22 10 10-36 28 16 4 40 30 8 v48 h-28 l-6 24 h-26 l-8-28 z"/>
+    <path d="M570 400 l18-70 22 10 10-36 28 16 4 40 30 8 v48 h-28 l-6 24 h-26 l-8-28 z"/>
+    <path d="M660 408 l18-70 22 10 10-36 28 16 4 40 30 8 v48 h-28 l-6 24 h-26 l-8-28 z"/>
+  </g>
+  <text x="40" y="80" fill="#6e2433" font-family="Georgia, serif" font-size="42">7 horses</text>
+  <text x="40" y="120" fill="#8a4b32" font-family="Georgia, serif" font-size="22">seven days of the week</text>
+</svg>
